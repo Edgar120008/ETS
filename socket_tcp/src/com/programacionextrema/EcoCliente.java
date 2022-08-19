@@ -4,17 +4,16 @@ import java.io.*;
 import java.net.*;
 
 class EcoServidor {  
-  public static final int PORT = 4444;
+  public static final int PORT = 80;
   public static void main(String[] args) throws IOException {
     // Establece el puerto en el que escucha peticiones
     ServerSocket socketServidor = null;
     try {
-      socketServidor = new ServerSocket(PORT);
+      socketServidor = new ServerSocket(80);
     } catch (IOException e) {
       System.out.println("No puede escuchar en el puerto: " + PORT);
       System.exit(-1);
     }
-
     Socket socketCliente = null;
     BufferedReader entrada = null;
     PrintWriter salida = null;

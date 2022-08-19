@@ -13,7 +13,7 @@ class EcoCliente {
     // servidor que está en la misma máquina que el cliente
     // y que escucha en el puerto 4444
     try {
-      socketCliente = new Socket("localhost", 4444);
+      socketCliente = new Socket("localhost", 80);
       // Obtenemos el canal de entrada
       entrada = new BufferedReader(new InputStreamReader(socketCliente.getInputStream()));
       // Obtenemos el canal de salida

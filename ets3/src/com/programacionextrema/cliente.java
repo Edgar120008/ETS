@@ -6,7 +6,7 @@ import java.net.*;
 class Cliente {
  
     private static final String HOST = "localhost";
-    private static final int PUERTO = 80;
+    private static final int PUERTO = 135;
  
     public static void main(String args[]) {
          
